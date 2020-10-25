@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Chefs 'N Dishes App!</h1>
+    <p>Chefs | <a href="/dishes">Dishes</a></p>
+</div>
+<h3>Check out our roster of Chefs!</h3>
+<a href="/new" class="addRight">Add a Chef</a>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th># of Dishes</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            foreach (var chef in Model)
+            {
+                <tr>
+                    <td>@chef.FirstName @chef.LastName</td>
+                    <td>@chef.Age</td>
+                    <td>@chef.CreatedDishes.Count</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

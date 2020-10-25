@@ -1,0 +1,5 @@
+{
+    "appService.preDeployTask": "publish-release",
+    "appService.deploySubpath": "",
+    "appService.defaultWebAppToDeploy": "/subscriptions/8ee407cb-40b8-491b-aa7a-e3c24e4df63c/resourceGroups/MyResourceGroup/providers/Microsoft.Web/sites/chefdishes"
+}
